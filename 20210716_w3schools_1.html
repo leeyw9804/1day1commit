@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #a1{
+                background-image: url('Files/workplace.jpg');
+            }
+            /* body {
+                background-image: url('Files/workplace.jpg');
+                background-repeat: no-repeat;
+            } */
+        </style>
+        <style>
+            table, th, td {
+                border : 1px solid black;
+                border-collapse: collapse;
+            }
+            th, td{
+                padding:  15px
+            }
+            th{
+                text-align: left;
+            }
+            table{
+                border-spacing: 15px;
+            }
+            #t01{
+                width:100%;
+                background-color: #b3a1f1;
+            }
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #333333;
+            }
+            
+            li a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 16px;
+            text-decoration: none; 
+            }
+            li a:hover {
+                background-color: #111111;
+            }
+            .city{
+                background-color: tomato;
+                color:white;
+                border: 2px solid black;
+                margin : 20px;
+                padding: 20px;
+            }
+            .note{
+                font-size: 120%;
+                color: red;
+
+            }
+        </style>
+    </head>
+
+
+
+    <body>
+        <!-- HTML image -->
+        <h2>HTML image</h2>
+        <img src="Files\pic_trulli.jpg" alt="Trulli" sidth = "500" height= "333">
+        <img src="https://www.w3schools.com/images/w3schools_green.jpg" alt = "w3schools.com">
+        <p><img src="Files\smiley.gif" alt = "smiley face" style = "float: left;width:42px; height:42px;">The image will float to the left of the text</p>
+        <!--image map-->
+        <img src="Files/workplace.jpg" alt = "workplace" usemap="#workmap">
+        <map name = "workmap">
+            <area shape="rect" coords="34, 44, 270, 350" href = "computer.htm">
+            <area shape="circle" coords="337, 300, 44" href ="coffee.htm" onclick="myFunction2()">
+        </map>
+        <script>
+            function myFunction2() {
+                alert("you clicked the coffee cup!")
+            }
+        </script>
+        <!--HTML background image-->
+        <div id="a1">
+            Helooasdsadasd<br>
+            Helooasdsadasd<br>
+            Helooasdsadasd<br>
+            Helooasdsadasd<br>
+        </div>
+        <!--HTML Table-->
+        <h2>Basic HTML table</h2>
+        <table style = "width:50%">
+            <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Age</th>
+            </tr>
+            <tr>
+                <td>jill</td>
+                <td>smith</td>
+                <td>50</td>
+            </tr>
+            <tr>
+                <td>Eve</td>
+                <td>jackson</td>
+                <td>94</td>
+            </tr>
+            <tr>
+                <td>john</td>
+                <td>Doe</td>
+                <td>80</td>
+            </tr>
+        </table>
+        <table id="t01">
+            <caption>Monthly savings</caption>
+            <tr>
+                <th>Name</th>
+                <th colspan="2">Telephone</th>
+            </tr>
+            <tr>
+                <td>Bill Gates</td>
+                <td>55577854</td>
+                <td>55577855</td>
+            </tr>
+        </table>
+        <!--HTML Lists-->
+        <!--<ul> = unordered list
+            <ol> = ordered list
+            <li> = list
+            <dl> = description list
+            <dt> = description term
+            <dd> = description data-->
+        <ul>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ul>
+        <ol>
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <h1>Description List</h1>
+        <dl>
+            <dt>Coffee</dt>
+            <dd>- black hot drink</dd>
+            <dt>Milk</dt>
+            <dd>- white cold drink</dd>
+        </dl>
+        
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+        <ol type="1">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <ol start="50">
+            <li>Coffee</li>
+            <li>Tea</li>
+            <li>Milk</li>
+        </ol>
+        <!--Html block & inline-->
+        <div style="border:1px solid black">Hello World</div>
+        <span style ="border:1px solid black">Hello World</span>
+        <div style = "background-color: black; color: white; padding:20px">
+            <h2>London</h2>
+            <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.
+            </p>     
+        <!--HTML Class-->
+        </div>
+        <p>Things <span style="color: blue;font-weight: bold;">blue </span>eyes</p> 
+
+        <button onclick="myFunction()">Hide elements</button>
+
+        <div class='city'>
+            <h2>London</h2>
+            <p>London is the capital of England</p>
+        </div>
+        <div class='city'>
+            <h2>Paris</h2>
+            <p>Paris is the capital of France</p>
+        </div>
+        <div class='city'>
+            <h2>Tokyo</h2>
+            <p>Tokyo is the capital of japen</p>
+        </div>
+        <script>
+            function myFunction() {
+                var x =
+            document.getElementsByClassName("city");
+                for (var i = 0; i < x.length; 1++)
+                    {x[i].style.display = "none";
+                }   
+            }
+        </script>
+
+        <h1>My <span class="note">Important</span>Heading</h1>
+        <p>This is some <span class="note">important</span>text.</p>
+    </body>
+
+</html>
