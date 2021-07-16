@@ -58,6 +58,12 @@
                 color: red;
 
             }
+            #myHeader {
+                background-color: lightblue;
+                color:black;
+                padding : 40px;
+                text-align: center;
+            }
         </style>
     </head>
 
@@ -189,18 +195,15 @@
             <h2>Tokyo</h2>
             <p>Tokyo is the capital of japen</p>
         </div>
-        <script>
-            function myFunction() {
-                var x =
-            document.getElementsByClassName("city");
-                for (var i = 0; i < x.length; 1++)
-                    {x[i].style.display = "none";
-                }   
-            }
-        </script>
-
         <h1>My <span class="note">Important</span>Heading</h1>
         <p>This is some <span class="note">important</span>text.</p>
+        <!--HTML ID attrs-->
+        <h1 id="myHeader">My Header</h1>
+        <!--HTML iframe-->
+        <iframe src="20210715_w3shools_1.html" height="200" width="300" title="Iframe Example"></iframe>
+        <iframe src="20210715_w3shools_1.html" style="border:2px solid red; height: 200px;width: 300px;" title="Iframe Example"></iframe>
+        <iframe src="20210715_w3shools_1.html" name="iframe_a" title="Iframe Example"></iframe>
+        <p><a href="https://www.w3schools.com" target="iframe_a">W3Schools</a></p>
     </body>
 
 </html>
