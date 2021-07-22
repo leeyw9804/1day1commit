@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src = "20210722_w3school_2.js"></script>
+
+</head>
+<body>
+<h2>Javascript in body</h2>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML ="My first JavaScript";
+</script> 
+<p id="demo1">A Paragraph</p>
+<button type = "button" onclick="myFunction()">Try it</button>
+<script src = "20210722_w3schools_2.js"></script>
+<p id = "demo2"></p>
+<script>
+    document.getElementById("demo2").innerHTML = 5+6;
+</script>
+
+
+<button type = "button" onclick="document.write(5+6)">Try it</button>
+<!-- <script>
+    window.alert(5+6)
+</script> -->
+<button onclick="window.print()">Print this page</button>
+
+<p id = "demo3"></p>
+<script>
+    let x,y,z;
+    x = 5;
+    y = 6;
+    z = x + y;
+    document.getElementById("demo3").innerHTML = "the value of z is " + z + ".";
+</script>
+<p id= "demo4"></p>
+<script>
+let x = 5;
+x++;
+let z = x;
+document.getElementById("demo4").innerHTML = z;
+</script>
+
+<p id = "demo5"></p>
+<script>
+let x = 10;
+document.getElementById("demo5").innerHTML = x;
+
+</script>
+
+</body>
+</html>
