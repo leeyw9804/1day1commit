@@ -12,5 +12,29 @@ document.getElementById("demo5").innerHTML = x;
 
 </script>
 
+<p id = "demo6"></p>
+<p id = "demo7"></p>
+
+
+<script>
+    function myFunction1(p1,p2) {
+        return p1 * p2;
+    }
+    document.getElementById("demo6").innerHTML = myFunction1(4,3);
+
+    function toCelsius(f) {
+        return (5/9) * (f-32);
+    }
+    document.getElementById("demo7").innerHTML = "the temperture is" + toCelsius(77) + "celsius";
+
+       
+</script>
+<p id = "demo8"></p>
+<script>
+const person = {firstName : "John", lastName : "Doe", age = 50, eyeColor = "blue"};
+document.getElementById("demo8").innerHTML = person.firstName + "is" + person.age + "years old";
+
+</script>
+
 </body>
 </html>
